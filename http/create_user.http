@@ -1,0 +1,63 @@
+
+POST http://localhost:9000/api/public/users
+Content-Type: application/json
+
+{
+  "firstName": "Test1",
+  "lastName": "Test1",
+  "email": "test1@gmail.com",
+  "birthdate": "1970-01-01",
+  "password": "test1",
+  "gender": "Male"
+}
+
+###
+POST http://localhost:9000/api/public/users
+Content-Type: application/json
+
+{
+  "firstName": "Test2",
+  "lastName": "Test2",
+  "email": "test2@gmail.com",
+  "birthdate": "1970-01-01",
+  "password": "test2",
+  "gender": "Male"
+}
+###
+POST http://localhost:9000/api/public/login
+Content-Type: application/json
+
+
+{
+  "email": "test@gmail.com",
+  "password": "test"
+}
+
+###
+GET http://localhost:9000/api/public/products3?page=3&orderBy=id&userId=56
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWJqZWN0IiwiaWQiOjU3LCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjY5ODE1NDM0LCJleHAiOjE2Njk4MTkwMzR9.RVsh7Ei8iDJjGjTA_g1fmM8HCqgL8nGosR1dF4S92GQ
+
+###
+POST http://localhost:8080/api/trades
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWJqZWN0IiwiaWQiOjU4LCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjcxNzEyOTc0LCJleHAiOjE2NzE3MTY1NzR9.pm5zB3eCkIGKnqQ9awW2KXeZvunA6CoYNsCBUaDdlQ4
+
+{
+  "buyerId": 58,
+  "sellerId": 60,
+  "productId": 144,
+  "date": null
+}
+
+###
+GET http://localhost:9000/api/public/images/65
+Content-Type: application/json
+
+
+
+
+###
+GET http://localhost:8080/api/public/products3?page=1&orderBy=id&userId=58
+
+

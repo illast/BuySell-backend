@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+      http://www.liquibase.org/xml/ns/pro
+      http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+    <include file="db/changelog/changelog-master.xml"/>
+
+    <changeSet author="Ilja Lastovko" id="1">
+        <insert tableName="users">
+            <column name="id" value="1"/>
+            <column name="first_name" value="John"/>
+            <column name="last_name" value="Snow"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="id" value="2"/>
+            <column name="first_name" value="Sam"/>
+            <column name="last_name" value="Smith"/>
+        </insert>
+
+        <insert tableName="product_category">
+            <column name="id" value="1"/>
+            <column name="name" value="Meal"/>
+        </insert>
+
+        <insert tableName="trade">
+            <column name="id" value="1"/>
+            <column name="buyer_id" value="1"/>
+            <column name="seller_id" value="2"/>
+        </insert>
+
+        <insert tableName="product">
+            <column name="id" value="1"/>
+            <column name="user_id" value="1"/>
+            <column name="category_id" value="1"/>
+            <column name="name" value="Milk"/>
+            <column name="trade_id" value="1"/>
+        </insert>
+
+        <insert tableName="product">
+            <column name="id" value="2"/>
+            <column name="user_id" value="1"/>
+            <column name="category_id" value="1"/>
+            <column name="name" value="Eggs"/>
+        </insert>
+
+        <insert tableName="product">
+            <column name="id" value="3"/>
+            <column name="user_id" value="2"/>
+            <column name="category_id" value="1"/>
+            <column name="name" value="Bread"/>
+        </insert>
+
+        <insert tableName="image">
+            <column name="id" value="1"/>
+            <column name="name" value="Pic1"/>
+            <column name="content_type" value="image/jpeg"/>
+            <column name="size" value="10"/>
+            <column name="bytes" value="iVBORw0KGgoAAAANSUh"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
