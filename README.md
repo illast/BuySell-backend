@@ -1,5 +1,5 @@
 ## What's this?
-**Backend** project for a [website](http://buysell.hopto.org) where people can sell their own products, as well as buy, comment and rate other people's products. \
+**Backend** project for a website where people can sell their own products, as well as buy, comment and rate other people's products. \
 \
 See also [frontend](https://github.com/illast/BuySell-frontend).
 
