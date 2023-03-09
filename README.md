@@ -1,7 +1,7 @@
 ## What's this?
 **Backend** project for a [website](http://buysell.hopto.org) where people can sell their own products, as well as buy, comment and rate other people's products. \
 \
-See also [frontend](https://gitlab.cs.ttu.ee/illast/iti0302-2022-client).
+See also [frontend](https://github.com/illast/BuySell-frontend).
 
 ## Technologies for development
 - **Java JDK 17**, as programming language
